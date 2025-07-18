@@ -13,7 +13,7 @@ app.add_middleware(
 )
 
 
-HF_TOKEN = "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"         
+HF_TOKEN = ""         
 if not HF_TOKEN:
     raise RuntimeError("HF_TOKEN environment variable not set")
 
