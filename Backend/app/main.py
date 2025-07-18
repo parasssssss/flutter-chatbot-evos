@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from huggingface_hub import InferenceClient
 import os, logging, traceback
+from .config import settings
+
 
 
 app = FastAPI()
@@ -13,7 +15,7 @@ app.add_middleware(
 )
 
 
-HF_TOKEN = ""         
+HF_TOKEN = settings.HUGGINGFACE_API_KEY         
 if not HF_TOKEN:
     raise RuntimeError("HF_TOKEN environment variable not set")
 
