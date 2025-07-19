@@ -1,4 +1,4 @@
-# chatapp_project
+# Evos:
 
 A new Flutter project.
 
