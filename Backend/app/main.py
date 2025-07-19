@@ -25,7 +25,7 @@ SUMMARISE_MODEL_ID = "facebook/bart-large-cnn"
 
 
 chat_client = InferenceClient(                 
-    provider="featherless-ai",
+    provider="nscale",
     api_key=HF_TOKEN,
 )
 sum_client  = InferenceClient(                 
